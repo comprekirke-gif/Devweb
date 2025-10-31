@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Web | Criação de Sites em até 7 dias e hospedagem grátis*</title>
+
+        <meta name="title" content="Digital Web | Criação de Sites em até 7 dias e hospedagem grátis*">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Criação de sites otimizados para performance e conversão de leads. Layout moderno e responsivo com SEO">
+    <meta name="keywords" content="criação de sites, site on-page, site com blog, desenvolvimento web">
+    <meta name="author" content="Objetiva Labs">
+    <link rel="canonical" href="https://digitalwebsite.com.br">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://digitalwebsite.com.br">
+    <meta property="og:title" content="Digital Web | Criação de Sites em até 7 dias e hospedagem grátis*">
+    <meta property="og:description" content="Criação de sites otimizados para performance e conversão de leads. Layout moderno e responsivo com SEO">
+    <meta property="og:image" content="./images/hero-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://digitalwebsite.com.br">
+    <meta property="twitter:title" content="Digital Web | Criação de Sites em até 7 dias e hospedagem grátis*">
+    <meta property="twitter:description" content="Criação de sites otimizados para performance e conversão de leads. Layout moderno e responsivo com SEO">
+    <meta property="twitter:image" content="./images/hero-image.jpg">
+    <meta name="robots" content="index">
+
+      <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+               <a href="https://www.digitalwebsite.com.br"><i class="fas fa-code"></i></a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="#servicos">Serviços</a>
+                <a href="#beneficios">Benefícios</a>
+                <a href="#precos">Preços</a>
+                <a href="#contato" class="btn-contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Carrossel -->
+    <section id="home" class="banner-carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide fade">
+                <div class="slide-content">
+                    <h1>Seu Site Profissional em 7 Dias</h1>
+                    <p>Criamos sites modernos e responsivos para alavancar seu negócio</p>
+                    <a href="#precos" class="btn-primary">Conhecer Planos</a>
+                </div>
+            </div>
+            <div class="carousel-slide fade">
+                <div class="slide-content">
+                    <h1>Hospedagem Grátis por 1 Ano</h1>
+                    <p>Seu site online sem custos adicionais no primeiro ano</p>
+                    <a href="#precos" class="btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="carousel-slide fade">
+                <div class="slide-content">
+                    <h1>Design Moderno e Responsivo</h1>
+                    <p>Perfeito em computadores, tablets e smartphones</p>
+                    <a href="#precos" class="btn-primary">Começar Agora</a>
+                </div>
+            </div>
+            <div class="carousel-slide fade">
+                <div class="slide-content">
+                    <h1>Suporte Técnico Completo</h1>
+                    <p>Estamos aqui para ajudar você em cada etapa</p>
+                    <a href="#precos" class="btn-primary">Falar com Especialista</a>
+                </div>
+            </div>
+
+            <!-- Controles do Carrossel -->
+            <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+
+            <!-- Indicadores -->
+            <div class="carousel-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Sites modernos com as tecnologias mais atuais do mercado</p>
+                </div>
+                <div class="servico-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Design Responsivo</h3>
+                    <p>Seu site funciona perfeitamente em qualquer dispositivo</p>
+                </div>
+                <div class="servico-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Hospedagem Incluída</h3>
+                    <p>1 ano de hospedagem grátis com sua contratação</p>
+                </div>
+                <div class="servico-card">
+                    <i class="fas fa-pen-fancy"></i>
+                    <h3>Design Personalizado</h3>
+                    <p>Layout exclusivo de acordo com sua identidade visual</p>
+                </div>
+                <div class="servico-card">
+                    <i class="fas fa-search"></i>
+                    <h3>SEO Otimizado</h3>
+                    <p>Seu site preparado para aparecer nos buscadores</p>
+                </div>
+                <div class="servico-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Suporte 24/7</h3>
+                    <p>Equipe pronta para ajudar sempre que precisar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Benefícios -->
+    <section id="beneficios" class="beneficios">
+        <div class="container">
+            <h2>Vantagens e Benefícios</h2>
+            <div class="beneficios-grid">
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Rápido</h3>
+                    <p>Seu site pronto em apenas 7 dias úteis</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Seguro</h3>
+                    <p>Certificado SSL e proteção contra ameaças</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Escalável</h3>
+                    <p>Cresce conforme seu negócio se expande</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Personalizado</h3>
+                    <p>Design único que reflete sua marca</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Fácil Manutenção</h3>
+                    <p>Painel intuitivo para gerenciar seu conteúdo</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Melhor ROI</h3>
+                    <p>Investimento que gera retorno comprovado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Preços -->
+    <section id="precos" class="precos">
+        <div class="container">
+            <h2>Nossos Planos</h2>
+            <div class="precos-grid">
+                <div class="preco-card">
+                    <div class="preco-header">
+                        <h3>Site Profissional</h3>
+                        <span class="tempo-entrega">em até 7 dias</span>
+                    </div>
+                    <div class="preco-valor">
+                        <span class="moeda">R$</span>
+                        <span class="valor">299,90</span>
+                    </div>
+                    <div class="preco-descricao">
+                        <p>Perfeito para começar sua presença online</p>
+                    </div>
+                    <ul class="preco-features">
+                        <li><i class="fas fa-check"></i> Site On-Page</li>
+                        <li><i class="fas fa-check"></i> Design personalizado</li>
+                        <li><i class="fas fa-check"></i> Hospedagem 1 ano</li>
+                        <li><i class="fas fa-check"></i> Certificado SSL</li>
+                        <li><i class="fas fa-check"></i> Suporte técnico</li>
+                    </ul>
+                    <a href="https://wa.me/5521982684928?text=Olá! Gostaria de contratar o plano Site Profissional por R$ 299,90" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contratar Agora
+                    </a>
+                </div>
+
+                <div class="preco-card preco-card-destaque">
+                    <div class="preco-badge">MAIS POPULAR</div>
+                    <div class="preco-header">
+                        <h3>Site + Blog</h3>
+                        <span class="tempo-entrega">em até 10 dias</span>
+                    </div>
+                    <div class="preco-valor">
+                        <span class="moeda">R$</span>
+                        <span class="valor">459,90</span>
+                    </div>
+                    <div class="preco-descricao">
+                        <p>Completo com blog para suas estratégias de conteúdo</p>
+                    </div>
+                    <ul class="preco-features">
+                        <li><i class="fas fa-check"></i> Tudo do plano anterior</li>
+                        <li><i class="fas fa-check"></i> Blog integrado</li>
+                        <li><i class="fas fa-check"></i> Categorias de posts</li>
+                        <li><i class="fas fa-check"></i> SEO avançado</li>
+                        <li><i class="fas fa-check"></i> Analytics integrado</li>
+                    </ul>
+                    <a href="https://wa.me/5521982684928?text=Olá! Gostaria de contratar o plano Site + Blog por R$ 459,90" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contratar Agora
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-importante">
+                <h3><i class="fas fa-gift"></i> Promoção Especial</h3>
+                <p><strong>Hospedagem grátis por 1 ano</strong> em ambos os planos! Após esse período, apenas R$ 9,90/mês</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <h3>Vamos Conversar?</h3>
+                    <p>Estamos prontos para transformar sua ideia em um site incrível. Clique no botão abaixo e fale conosco via WhatsApp!</p>
+                    <div class="contato-detalhes">
+                        <div class="detalhe">
+                            <i class="fas fa-phone"></i>
+                            <p>+55 21 98268-4928</p>
+                        </div>
+                        <div class="detalhe">
+                            <i class="fas fa-clock"></i>
+                            <p>Segunda a Sexta: 9h às 18h</p>
+                        </div>
+                        <div class="detalhe">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Rio de Janeiro - RJ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contato-botao">
+                    <a href="https://wa.me/5521982684928?text=Olá! Gostaria de saber mais sobre os serviços de criação de sites" class="btn-whatsapp-grande" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Falar no WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><a href="https://www.digitalwebsite.com.br">Digital Web</a></h4>                    
+                    <p>Transformando ideias em sites incríveis desde 2024</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#precos">Preços</a></li>
+                    </ul>
+                </div>
+                <!--
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                -->
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Digital Web. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5521982684928?text=Olá! Gostaria de saber mais sobre os serviços de criação de sites" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <button id="backToTopBtn" title="Voltar ao Topo"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
