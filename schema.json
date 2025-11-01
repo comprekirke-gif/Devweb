@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Digital Web | Criação de Sites em até 7 dias e hospedagem grátis*",
+  "alternateName": "Digital Web | Criação de Sites em até 7 dias e hospedagem grátis*",
+  "description": "Criação de sites otimizados para performance e conversão de leads. Layout moderno e responsivo com SEO",
+  "url": "https://digitalwebsite.com.br",
+  "telephone": "+55 21 98268-4928",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rio de Janeiro",
+    "addressRegion": "Rio de Janeiro",
+    "postalCode": "22640-100",
+    "addressCountry": "BR"
+}
+}
