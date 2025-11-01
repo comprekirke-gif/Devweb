@@ -61,7 +61,7 @@ body {
 }
 
 .menu-toggle {
-    display: none;
+    display: none; /* Escondido por padrão em desktop */
     flex-direction: column;
     background: none;
     border: none;
@@ -110,7 +110,6 @@ body {
     gap: 2rem;
     transition: var(--transicao);
     align-items: center;
-    width: 100%;
     order: 3;
 }
 
@@ -873,7 +872,7 @@ body {
 #backToTopBtn {
     display: none; /* Escondido por padrão */
     position: fixed;
-    bottom: 100px; /* Acima do botão do WhatsApp */
+    bottom: 130px; /* Acima do botão do WhatsApp */
     right: 30px;
     z-index: 98;
     border: none;
@@ -881,7 +880,7 @@ body {
     background: linear-gradient(135deg, var(--cor-roxo) 0%, var(--cor-azul) 100%);
     color: var(--cor-branco);
     cursor: pointer;
-    padding: 15px;
+    padding: 20px;
     border-radius: 50%;
     font-size: 18px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -895,9 +894,9 @@ body {
 
 @media (max-width: 768px) {
     #backToTopBtn {
-        bottom: 80px; /* Ajuste para telas menores */
+        bottom: 100px; /* Ajuste para telas menores */
         right: 20px;
-        padding: 12px;
+        padding: 20px;
         font-size: 16px;
     }
 }
@@ -921,15 +920,127 @@ body {
     }
 
     .menu-toggle {
-        display: flex;
+        display: flex; /* Mostra o botão em mobile */
+        order: 2;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%; /* Posiciona abaixo do navbar */
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: var(--cor-cinza-escuro); /* Fundo para o menu */
+        padding: 1rem 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+        gap: 0; /* Remove o gap para que os links ocupem a largura total */
+        order: 3;
+        flex-basis: 100%; /* Ocupa a largura total abaixo do logo e toggle */
+    }
+
+    .nav-links a {
+        padding: 1rem 20px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .navbar .container {
+        flex-wrap: nowrap; /* Garante que logo e toggle fiquem na mesma linha */
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .menu-toggle {
         order: 2;
     }
 
     .nav-links {
         order: 3;
-        width: 100%;
-        flex-direction: column;
-        gap: 0;
+        flex-basis: 100%; /* Ocupa a largura total abaixo do logo e toggle */
+    }
+
+    .slide-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .slide-content p {
+        font-size: 1.1rem;
+    }
+
+    .servicos-grid,
+    .beneficios-grid,
+    .precos-grid,
+    .contato-content,
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .preco-card-destaque {
+        transform: scale(1);
+    }
+
+    .preco-card-destaque:hover {
+        transform: scale(1) translateY(-10px);
+    }
+
+    .contato-botao {
+        margin-top: 2rem;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        line-height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+@media (max-width: 480px) {
+    .slide-content h1 {
+        font-size: 2rem;
+    }
+
+    .slide-content p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .btn-whatsapp-grande {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}
         background: rgba(10, 14, 39, 0.95);
         padding: 1rem 0;
         max-height: 0;
@@ -1012,11 +1123,11 @@ body {
 
     .menu-toggle {
         display: flex;
+        margin-left: 50%;
     }
 
     .nav-links {
         order: 3;
-        width: 100%;
         flex-direction: column;
         gap: 0;
         background: rgba(10, 14, 39, 0.95);
