@@ -6,4 +6,34 @@
         <changefreq>always</changefreq>
         <priority>1.0</priority>
     </url>
+        <url>
+        <loc>https://www.digitalwebsite.com.br/lp/criacao-de-site-299.html</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1.0</priority>
+    </url>
+        <url>
+        <loc>https://www.digitalwebsite.com.br/lp/site-institucional.html</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1.0</priority>
+    </url>
+        <url>
+        <loc>https://www.digitalwebsite.com.br/lp/montagem-de-site-profissional.html</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1.0</priority>
+    </url>
+        <url>
+        <loc>https://www.digitalwebsite.com.br/lp/criacao-de-website.html</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1.0</priority>
+    </url>
+            <url>
+        <loc>https://www.digitalwebsite.com.br/lp/criacao-de-site.html</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>

@@ -1213,3 +1213,90 @@ body {
         font-size: 1.5rem;
     }
 }
+
+/* ==========================================
+   ESTILOS PARA TABELA DE COMPARAÇÃO (LP)
+   ========================================== */
+
+.subtitulo {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.8); /* Cor de texto para a seção .beneficios */
+}
+
+.comparacao-tabela {
+    width: 100%;
+    overflow-x: auto; /* Garante rolagem horizontal em telas pequenas */
+}
+
+.comparacao-tabela table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: var(--cor-branco); /* Fundo branco para a tabela */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    min-width: 600px; /* Garante que a tabela não fique muito estreita */
+}
+
+.comparacao-tabela th, .comparacao-tabela td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--cor-cinza-claro);
+    color: var(--cor-texto); /* Cor de texto padrão */
+}
+
+.comparacao-tabela th {
+    background-color: var(--cor-roxo);
+    color: var(--cor-branco);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.comparacao-tabela tr:nth-child(even) {
+    background-color: var(--cor-cinza-claro);
+}
+
+.comparacao-tabela tr:hover {
+    background-color: #e9ecef;
+}
+
+.comparacao-tabela td:first-child {
+    font-weight: 600;
+    color: var(--cor-preto);
+}
+
+/* Estilos para ícones de check/x na tabela */
+.comparacao-tabela .fa-check {
+    color: #28a745; /* Verde */
+    font-size: 1.1rem;
+}
+
+.comparacao-tabela .fa-times {
+    color: #dc3545; /* Vermelho */
+    font-size: 1.1rem;
+}
+
+/* Ajuste para a seção de benefícios na LP */
+.beneficios.lp-comparacao {
+    background: var(--cor-cinza-claro); /* Fundo claro para a seção da tabela */
+    color: var(--cor-texto);
+}
+
+.beneficios.lp-comparacao h2 {
+    color: var(--cor-preto);
+}
+
+.beneficios.lp-comparacao .subtitulo {
+    color: var(--cor-texto-claro);
+}
+
+@media (max-width: 768px) {
+    .comparacao-tabela table {
+        min-width: 100%; /* Permite que a tabela ocupe 100% em telas menores */
+    }
+}
